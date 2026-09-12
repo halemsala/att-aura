@@ -1,0 +1,16 @@
+{
+  "enabled": true,
+  "provider_order": ["ollama", "lmstudio"],
+  "ollama_url": "http://127.0.0.1:11434",
+  "ollama_model": "nomic-embed-text",
+  "lmstudio_url": "http://127.0.0.1:1234/v1",
+  "lmstudio_model": "text-embedding-nomic-embed-text-v1.5",
+  "db_path": "data/aura_vector_memory.sqlite3",
+  "search_k": 12,
+  "oversample": 3,
+  "min_cases_for_stats": 5,
+  "max_age_days": 180,
+  "timeout_s": 2.0,
+  "cache_size": 256,
+  "migrate_batch_limit": 2000
+}

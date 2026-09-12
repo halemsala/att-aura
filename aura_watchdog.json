@@ -1,9 +1,0 @@
-{
-  "interval_s": 60,
-  "remind_after_min": 30,
-  "services": [
-    {"name": "hermes", "expect": false},
-    {"name": "jarvis", "expect": false},
-    {"name": "ollama", "expect": false}
-  ]
-}

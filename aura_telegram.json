@@ -1,8 +1,0 @@
-{
-  "enabled": false,
-  "bot_token": "",
-  "chat_id": "",
-  "min_level": "warn",
-  "rate_limit_per_hour": 20,
-  "dedupe_minutes": 10
-}
