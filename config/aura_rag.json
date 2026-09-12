@@ -1,6 +1,6 @@
 {
   "enabled": true,
-  "provider_order": ["ollama", "lmstudio"],
+  "provider_order": ["lmstudio"],
   "ollama_url": "http://127.0.0.1:11434",
   "ollama_model": "nomic-embed-text",
   "lmstudio_url": "http://127.0.0.1:1234/v1",

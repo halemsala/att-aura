@@ -5,6 +5,13 @@ import logging
 from fastapi import APIRouter, Body
 
 LOG = logging.getLogger("aura.rag.routes")
+
+# --- FASE 1: bridge anti-shadowing (engine/agents pode sombrear agents/) ---
+try:
+    from engine import aura_agents_bridge
+    aura_agents_bridge.ensure()
+except Exception:
+    pass
 router = APIRouter()
 
 
