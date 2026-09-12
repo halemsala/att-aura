@@ -53,7 +53,7 @@ class TestBacktester(unittest.TestCase):
 
     def test_brier_matematica_exata(self):
         self.assertAlmostEqual(_brier([("", 1.0, 1), ("", 0.0, 0)]), 0.0)
-        self.assertAlmostEqual(_brier([("", 0.8, 1), ("", 0.6, 0)]), 0.10)
+        self.assertAlmostEqual(_brier([("", 0.8, 1), ("", 0.6, 0)]), 0.20)
         self.assertAlmostEqual(_log_loss([("", 1.0, 1), ("", 0.0, 0)]), 0.0, places=5)
 
     def test_insufficient_data(self):
