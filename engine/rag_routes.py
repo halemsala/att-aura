@@ -41,3 +41,14 @@ async def rag_search(payload: dict = Body(...)):
         return ctx if ctx is not None else {"status": "disabled"}
     except Exception as e:
         return {"status": "error", "note": str(e)}
+
+
+
+@router.get("/api/rag/backtest")
+async def rag_backtest():
+    """Fase 2.2: calibracao das probs emitidas (read-only sobre o RAG)."""
+    try:
+        from agents.rag_backtest import backtest_report
+        return backtest_report()
+    except Exception as e:
+        return {"status": "error", "note": str(e)}

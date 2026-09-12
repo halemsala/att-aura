@@ -13,7 +13,7 @@ ROOT = Path(__file__).resolve().parents[1]
 AGENTS = ROOT / "agents"
 
 # ordem importa: vector_memory primeiro (rag_analog/rag_hooks dependem dele)
-_MODULES = ("vector_memory", "rag_analog", "glm_analysis_agent", "rag_hooks")
+_MODULES = ("vector_memory", "rag_analog", "rag_backtest", "glm_analysis_agent", "rag_hooks")
 
 
 def _ensure_pkg() -> None:
